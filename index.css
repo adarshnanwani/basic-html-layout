@@ -116,6 +116,12 @@ table th {
   background-color: chartreuse;
 }
 
+#form-section {
+  padding: 20px;
+  background-color: #eee;
+  text-align: center;
+}
+
 footer {
   position: relative;
   height: 30px;
