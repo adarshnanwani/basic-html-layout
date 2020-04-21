@@ -117,15 +117,65 @@ table th {
 }
 
 #form-section {
+  position: relative;
+  height: 350px;
   padding: 20px;
   background-color: #eee;
   text-align: center;
+}
+
+#user-registration-form {
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60%;
+  padding: 20px;
+  left: 20%;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+#user-registration-form div {
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+input[type='text'],
+input[type='password'],
+select,
+input[type='email'],
+input[type='date'] {
+  padding: 5px;
+  width: 200px;
+  border-radius: 4px;
+  border: transparent;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 footer {
   position: relative;
   height: 30px;
   background-color: blueviolet;
+}
+
+input[type='submit'],
+input[type='reset'] {
+  width: 100px;
+  padding: 5px 10px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+}
+input[type='submit'] {
+  background-color: greenyellow;
+}
+input[type='reset'] {
+  background-color: red;
+  color: #fff;
 }
 
 footer p {

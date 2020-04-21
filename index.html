@@ -9,6 +9,11 @@
     />
     <link href="./index.css" rel="stylesheet" />
     <title>My First Webpage</title>
+    <style>
+      .aside-area h3 {
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -25,7 +30,7 @@
     <main id="main">
       <section>
         <article id="article-1">
-          <p>
+          <p style="color: white;">
             Lorem ipsum dolor imet coneds Lorem ipsum dolor imet conedsLorem
             ipsum dolor imet conedsLorem ipsum dolor imet coneds Lorem ipsum
             dolor imet conedsLorem ipsum dolor imet coneds
@@ -48,22 +53,26 @@
     <section id="table-section">
       <section class="table-area" id="table-area-1">
         <table>
-          <tr>
-            <th>Name</th>
-            <th>Location</th>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>BLR</td>
-          </tr>
-          <tr>
-            <td>Jane</td>
-            <td>NY</td>
-          </tr>
-          <tr>
-            <td>Kevin</td>
-            <td>BLR</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>BLR</td>
+            </tr>
+            <tr>
+              <td>Jane</td>
+              <td>NY</td>
+            </tr>
+            <tr>
+              <td>Kevin</td>
+              <td>BLR</td>
+            </tr>
+          </tbody>
         </table>
       </section>
       <section class="table-area" id="table-area-2">
@@ -99,14 +108,19 @@
     </section>
     <section id="form-section">
       <h3>HTML User Registration Form</h3>
-      <form>
+      <form id="user-registration-form">
         <div>
           <label for="name" aria-label="Name of the user">Name:</label>
           <input type="text" id="name" placeholder="Enter your name" required />
         </div>
         <div>
           <label for="password">Password:</label>
-          <input type="password" id="password" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter a password"
+            required
+          />
         </div>
         <div>
           <label for="city">City:</label>
@@ -118,14 +132,19 @@
         </div>
         <div>
           <label for="useremail">Email:</label>
-          <input type="email" id="useremail" required />
+          <input
+            type="email"
+            id="useremail"
+            placeholder="Enter your email"
+            required
+          />
         </div>
         <div>
           <label for="birthdate">DoB:</label>
           <input type="date" id="birthdate" required />
         </div>
-        <input type="submit" value="Register" />
-        <input type="reset" value="Reset" />
+        <input type="submit" value="Register" role="button" />
+        <input type="reset" value="Reset" role="button" />
       </form>
     </section>
     <footer>
